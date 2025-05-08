@@ -1,29 +1,35 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin-top: 20px;
-}
-
-#gameArea {
-    position: relative;
-    width: 400px;
-    height: 400px;
     background-color: #000;
-    margin: 50px auto;
-    border: 2px solid #fff;
+    color: white;
 }
 
-#pacman {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: yellow;
-    border-radius: 50%;
-    top: 180px;
-    left: 180px;
+/* Cabeçalho */
+h1 {
+    background-color: #000;
+    color: yellow;
+    padding: 20px;
+    font-size: 2em;
+}
+
+/* Área de Jogo */
+#gameArea {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Canvas do jogo */
+#gameCanvas {
+    border: 2px solid #000;
+    background-color: #111;
 }
